@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Prac</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <div class="items posScreen">
+
+                
+            </div>
+
+        <div class="totalDisplay posScreen">
+            <p>Total:</p>
+            <p class="total">$ 0.00</p>
+            </div>
+        
+            <table class="buttons">
+                <tr>
+                    <td>
+                        <p>Item: <span id="item1"></span></p>
+                        <p>Price: <span id="price1"></span></p>
+                        <a onClick="onEdit()">
+                            Edit 
+                        </a>
+                        <a onClick="onDelete()">
+                            Delete 
+                        </a>
+                    </td>
+                    <td>
+                        <p>Item: <span id="item2"></span></p>
+                        <p>Price: <span id="price2"></span></p>
+                        <a onClick="onEdit()">
+                            Edit 
+                        </a>
+                        <a onClick="onDelete()">
+                            Delete 
+                        </a>
+                    </td>
+                    <td>
+                        <p>Item: <span id="item3"></span></p>
+                        <p>Price: <span id="price3"></span></p>
+                        <a onClick="onEdit()">
+                            Edit 
+                        </a>
+                        <a onClick="onDelete()">
+                            Delete 
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Item: <span id="item4"></span></p>
+                        <p>Price: <span id="price4"></span></p>
+                        <a onClick="onEdit()">
+                            Edit 
+                        </a>
+                        <a onClick="onDelete()">
+                            Delete 
+                        </a>
+                    </td>
+                    <td>
+                        <p></p>
+                        <p>Item: <span id="item5"></span></p>
+                        <p>Price: <span id="price5"></span></p>
+                        <a onClick="onEdit()">
+                            Edit 
+                        </a>
+                        <a onClick="onDelete()">
+                            Delete 
+                        </a>
+                    </td>
+                    <td class="cashBtn" onClick="onCash()">
+                        Cash
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Item: <span id="item6"></span></p>
+                        <p>Price: <span id="price6"></span></p>
+                        <a onClick="onEdit()">
+                            Edit 
+                        </a>
+                        <a onClick="onDelete()">
+                            Delete 
+                        </a>
+                    </td>
+                    <td class="totalBtn" colspan="2" onClick="onTotal()">
+                        Total
+                    </td>
+                </tr>
+
+            </table>
+        <form id="editForm" class="editForm hideEditForm" onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+        <div>
+            <label>Item:</label>
+            <input type="text" name="item" id="item">
+        </div>
+        <div>
+            <label>Price: </label>
+            <input type="number" step="any" name="price" id="price" placeholder="0.00">
+        </div>
+        <div class="formCta">
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

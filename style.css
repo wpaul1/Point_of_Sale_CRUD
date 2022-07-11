@@ -1,0 +1,81 @@
+body{
+    background-color: #eeffee;
+    margin: 0;
+}
+
+.posScreen{
+    width: 75%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: aquamarine;
+    text-align: right;
+}
+
+.buttons{
+    position: absolute;
+    top: 10em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: antiquewhite;
+    width: 80%;
+}
+
+.buttons a{
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: large;
+    display: block;
+    text-decoration: underline;
+    width: 25%;
+    float: left;
+}
+
+.buttons a:hover{
+    cursor: pointer;
+}
+td {
+    border: 1px solid black;
+    height: 5em;
+    padding: .5em;
+}
+
+td p{
+    
+    text-align: center;
+}
+
+
+
+.totalBtn{
+    font-size: larger;
+    text-align: center;
+}
+
+.cashBtn{
+    font-size: larger;
+    text-align: center;
+}
+
+.hideEditForm{
+    display: none;
+}
+
+.editForm{
+    text-align: center;
+    width: 20em;
+    background-color: azure;
+    z-index: 999;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
