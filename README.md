@@ -1,0 +1,1 @@
+This is a CRUD application simulating a point of sale interface. Each button is customizable by the user allowing to set Item Name and Item Price. Once set, the user is able to add items to the order and total the order out when enough cash has been tended.
